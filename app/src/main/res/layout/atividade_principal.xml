@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo Nome -->
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="textPersonName" />
+
+    <!-- Campo CPF -->
+    <EditText
+        android:id="@+id/etCPF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CPF"
+        android:inputType="number" />
+
+    <!-- Campo Estado -->
+    <EditText
+        android:id="@+id/etEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado"
+        android:inputType="text" />
+
+    <!-- Campo Cidade -->
+    <EditText
+        android:id="@+id/etCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade"
+        android:inputType="text" />
+
+    <!-- Título da Pergunta -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="De qual linguagem de programação você mais gosta?"
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+
+    <!-- Checkboxes -->
+    <CheckBox
+        android:id="@+id/cbJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JAVA" />
+
+    <CheckBox
+        android:id="@+id/cbPHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHP" />
+
+    <CheckBox
+        android:id="@+id/cbCSharp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C#" />
+
+    <!-- Segunda Pergunta -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qual paradigma de programação você prefere?"
+        android:textSize="16sp"
+        android:paddingTop="16dp" />
+
+    <!-- Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/rgParadigma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbProcedural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Procedural" />
+
+        <RadioButton
+            android:id="@+id/rbPOO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POO" />
+    </RadioGroup>
+
+    <!-- Botões -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="SALVAR" />
+    </LinearLayout>
+</LinearLayout>
